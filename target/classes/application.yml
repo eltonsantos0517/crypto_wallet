@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 'crypto_wallet'
+  profiles:
+    active: local
+  http:
+    log-request-details: true
+
+max-concurrent-threads: 2
+decimal-places: 2
+
+coincap:
+  url: https://api.coincap.io/v2

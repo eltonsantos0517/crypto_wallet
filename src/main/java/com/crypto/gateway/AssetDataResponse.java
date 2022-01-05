@@ -1,9 +1,6 @@
 package com.crypto.gateway;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +8,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 class AssetDataResponse {
 
     private List<AssetResponse> data;
@@ -19,6 +17,7 @@ class AssetDataResponse {
     @Setter
     @NoArgsConstructor
     @AllArgsConstructor
+    @Builder
     static class AssetResponse {
         private String id;
         private String symbol;

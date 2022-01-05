@@ -1,9 +1,6 @@
 package com.crypto.gateway;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +8,7 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 class AssetHistoryResponse {
 
     private List<AssetResponse> data;
@@ -19,6 +17,7 @@ class AssetHistoryResponse {
     @NoArgsConstructor
     @Getter
     @Setter
+    @Builder
     static class AssetResponse {
         private double priceUsd;
         private long time;
